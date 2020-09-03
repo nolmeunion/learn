@@ -36,3 +36,9 @@ build
 
 # vscode
 .vscode
+
+# visual studio 
+.vs 
+.pdb
+Debug
+Release

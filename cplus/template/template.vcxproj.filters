@@ -19,6 +19,9 @@
     <ClCompile Include="learn\chap02_01.cpp">
       <Filter>learn</Filter>
     </ClCompile>
+    <ClCompile Include="learn\modern_cplus.cpp">
+      <Filter>learn</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="learn\readme.md">

@@ -414,6 +414,17 @@ struct disjunction<_First, _Rest...> : _Disjunction<_First::value, _First, _Rest
 template <class... _Traits>
 _INLINE_VAR constexpr bool disjunction_v = disjunction<_Traits...>::value;
 ```
+값이 아니라 타잎이라는 점을 명심해야 한다. 값은 없다. 타잎만 있다. 
+
+_Is_any_of_v<int, bool, char, ...> 
+==> disjuction_v<is_same<int, bool>, is_same<int, char>, ...> 
+==> disjunction<is_same<int, bool>::value, is_same<int, char>, ..., is_same<int, int>>
+==> disjunction<false, is_same<int, char>, ..., is_same<int, int>>
+    : _Disjunction<false, is_same<int, char>, ..., is_same<int, int>>
+
+어떤 템플릿 함수가 일치할 지 알아야 하고, 확장을 할 수 있어야 한다. 
+
+
 
 
 

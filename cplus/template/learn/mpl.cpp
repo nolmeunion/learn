@@ -28,6 +28,12 @@ struct factorial<0>
 	const static int value = 1;
 };
 
+template <typename ...Args>
+auto addup(Args... args)
+{
+	return (... + args);
+}
+
 } // noname
 
 TEST_CASE("modern cplus. mpl")
@@ -47,5 +53,15 @@ TEST_CASE("modern cplus. mpl")
 		REQUIRE(std::is_integral<int>::value);
 		REQUIRE(std::is_same<int, int>::value);
 		REQUIRE(std::is_same<int, short>::value == false);
+	}
+
+	SECTION("variadic template")
+	{
+		SECTION("parameter pack")
+		{
+			// parameter pack expansion ... 
+
+			REQUIRE(addup(2, 3, 4) == 10);
+		}
 	}
 }

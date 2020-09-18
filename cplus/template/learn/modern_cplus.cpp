@@ -6,6 +6,23 @@
 #include <vector>
 #include <iostream>
 
+namespace
+{
+
+class X
+{
+public:
+	X(int v)
+	{
+		m_v = v;
+	}
+
+private: 
+	int m_v{ 0 };
+};
+
+} // noname
+
 TEST_CASE("modern cplus")
 {
 	SECTION("uniform initialization")
@@ -125,4 +142,10 @@ TEST_CASE("modern cplus")
 		// something that can be evaluated (expression) at compile time
 	}
 
+	SECTION("make_shared")
+	{
+		std::shared_ptr<X> p1{ new X{1} };
+
+
+	}
 }

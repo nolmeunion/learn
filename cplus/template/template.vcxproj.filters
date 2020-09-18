@@ -22,6 +22,12 @@
     <ClCompile Include="learn\modern_cplus.cpp">
       <Filter>learn</Filter>
     </ClCompile>
+    <ClCompile Include="learn\concurrent_queue.cpp">
+      <Filter>learn</Filter>
+    </ClCompile>
+    <ClCompile Include="learn\mpl.cpp">
+      <Filter>learn</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="learn\readme.md">

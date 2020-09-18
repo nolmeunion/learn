@@ -143,7 +143,9 @@
   <ItemGroup>
     <ClCompile Include="learn\chap02_01.cpp" />
     <ClCompile Include="learn\chap02_02.cpp" />
+    <ClCompile Include="learn\concurrent_queue.cpp" />
     <ClCompile Include="learn\modern_cplus.cpp" />
+    <ClCompile Include="learn\mpl.cpp" />
     <ClCompile Include="template.cpp" />
   </ItemGroup>
   <ItemGroup>

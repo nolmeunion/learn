@@ -8,6 +8,9 @@
     <Filter Include="learn">
       <UniqueIdentifier>{c965ebff-dce4-4d85-bd5f-763030b36ad0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="learn\tcg">
+      <UniqueIdentifier>{caa417e7-fd81-425d-9c4c-9c1df49f6e26}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="template.cpp">
@@ -27,6 +30,18 @@
     </ClCompile>
     <ClCompile Include="learn\mpl.cpp">
       <Filter>learn</Filter>
+    </ClCompile>
+    <ClCompile Include="learn\tcg\1_function_templates.cpp">
+      <Filter>learn\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="learn\tcg\2_class_templates.cpp">
+      <Filter>learn\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="learn\tcg\3_nontype_template_parameters.cpp">
+      <Filter>learn\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="learn\tcg\4_variadic_templates.cpp">
+      <Filter>learn\tcg</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -146,6 +146,10 @@
     <ClCompile Include="learn\concurrent_queue.cpp" />
     <ClCompile Include="learn\modern_cplus.cpp" />
     <ClCompile Include="learn\mpl.cpp" />
+    <ClCompile Include="learn\tcg\1_function_templates.cpp" />
+    <ClCompile Include="learn\tcg\2_class_templates.cpp" />
+    <ClCompile Include="learn\tcg\3_nontype_template_parameters.cpp" />
+    <ClCompile Include="learn\tcg\4_variadic_templates.cpp" />
     <ClCompile Include="template.cpp" />
   </ItemGroup>
   <ItemGroup>

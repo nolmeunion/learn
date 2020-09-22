@@ -118,5 +118,3 @@ using Bases::operator()...; // OK since C++17
 
 
 
-
-

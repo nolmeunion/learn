@@ -43,6 +43,15 @@
     <ClCompile Include="learn\tcg\4_variadic_templates.cpp">
       <Filter>learn\tcg</Filter>
     </ClCompile>
+    <ClCompile Include="learn\tcg\5_tricky_basics.cpp">
+      <Filter>learn\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="learn\tcg\6_move_semantics_and_enable_if.cpp">
+      <Filter>learn\tcg</Filter>
+    </ClCompile>
+    <ClCompile Include="learn\tcg\7_by_value_or_by_reference.cpp">
+      <Filter>learn\tcg</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="learn\readme.md">

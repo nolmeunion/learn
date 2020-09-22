@@ -150,6 +150,9 @@
     <ClCompile Include="learn\tcg\2_class_templates.cpp" />
     <ClCompile Include="learn\tcg\3_nontype_template_parameters.cpp" />
     <ClCompile Include="learn\tcg\4_variadic_templates.cpp" />
+    <ClCompile Include="learn\tcg\5_tricky_basics.cpp" />
+    <ClCompile Include="learn\tcg\6_move_semantics_and_enable_if.cpp" />
+    <ClCompile Include="learn\tcg\7_by_value_or_by_reference.cpp" />
     <ClCompile Include="template.cpp" />
   </ItemGroup>
   <ItemGroup>

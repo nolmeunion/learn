@@ -32,7 +32,6 @@ TEST_CASE("7 by value or by reference")
 	SECTION("ref and cref")
 	{
 		std::string s{ "hello" };
-
 		printR(std::cref(s));
 	}
 }

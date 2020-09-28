@@ -113,9 +113,32 @@ hyperviser, kernel, userspace applications.
 ### the hypervisor, the os, and the applications 
 
 
-OS를 공부하고 와야겠다. 
+### the role of domain 0 
 
+domain 0 is very important to a Xen system. 
 
+- provides device drivers 
+- 
 
+TCP/IP 통신이 Xen에서 이루어지는 방식을 설명한다. AWS도 이렇지는 않겠지? 
+```
+First, it travels through the TCP/IP stack as it would
+normally. The bottom of the stack, however, is not a normal network interface
+driver. It is a simple piece of code that puts the packet into some shared memory.
+The memory segment has been previously shared using Xen grant tables and
+advertised via the XenStore.
+The other half of the split device driver, running on the dom0 guest, reads
+the packet from the buffer, and inserts it into the firewalling components of the
+operating system—typically something like iptables or pf, which routes it as it
+would a packet coming from a real interface. Once the packet has passed through
+any relevant firewalling rules, it makes its way down to the real device driver.
+This is able to write to certain areas of memory reserved for I/O, and may require
+access to IRQs via Xen. The physical network device then sends the packet
+```
 
+Domain U Guest / Split device driver ==> Shared Memory ==> 
+Domain 0 OS / Split device driver 
+    ==> TCP/IP Stack (Routing/Bridging) 
+    ==> Real Device Driver 
+    ==> Physical Device 
 
